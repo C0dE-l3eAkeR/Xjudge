@@ -1,0 +1,25 @@
+.login-banner {
+  align-items: center;
+  background-color: var(--background-success);
+  border: 2px solid var(--background-success);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.login-banner .plus-link {
+  color: var(--text-primary);
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.1em;
+}
+.login-banner .auth-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=login-banner.css.map */

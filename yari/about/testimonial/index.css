@@ -1,0 +1,62 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .testimonial {
+    flex-direction: row;
+  }
+}
+.testimonial iframe {
+  height: 50vw;
+  padding: 0;
+}
+@media screen and (min-width: 769px) {
+  .testimonial iframe {
+    height: initial;
+    width: 48%;
+  }
+}
+.testimonial .testimonial-copy {
+  margin: 0 auto;
+  max-width: 18rem;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .testimonial .testimonial-copy {
+    margin: initial;
+    text-align: initial;
+  }
+}
+.testimonial .testimonial-copy img {
+  margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+  .testimonial .testimonial-copy img {
+    margin: initial;
+  }
+}
+.testimonial .testimonial-copy p {
+  font-size: 18px;
+  line-height: 120%;
+}
+.testimonial .testimonial-copy .author-name,
+.testimonial .testimonial-copy .author-title {
+  display: block;
+  /* MDN UI / Body / M */
+  font-size: 13px;
+  line-height: 1.2;
+}
+.testimonial .quotation-mark {
+  background-color: var(--icon-primary);
+  height: 10px;
+  margin-left: 4px;
+  mask-image: url("./quote.svg");
+  mask-size: cover;
+  width: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

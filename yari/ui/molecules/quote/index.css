@@ -1,0 +1,29 @@
+blockquote.quote {
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+@media screen and (max-width: 40rem) {
+  blockquote.quote {
+    flex-wrap: wrap-reverse;
+  }
+}
+blockquote.quote p {
+  display: flex;
+  font-style: italic;
+}
+blockquote.quote p .icon {
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+blockquote.quote .name {
+  display: inline;
+  font-size: var(--type-base-font-size-rem);
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

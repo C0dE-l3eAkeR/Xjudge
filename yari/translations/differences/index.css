@@ -1,0 +1,89 @@
+.all-translations .error-message {
+  background-color: rgb(252, 159, 159);
+  margin: 25px 0;
+  padding: 10px;
+}
+.all-translations .error-message h3,
+.all-translations .error-message h4 {
+  margin-top: 0;
+}
+.all-translations .error-message h3 span.page {
+  color: #666;
+  margin-left: 10px;
+}
+.all-translations .error-message p {
+  margin-bottom: 3px;
+}
+.all-translations .loading {
+  margin: 200px;
+  text-align: center;
+}
+.all-translations .loading progress {
+  border-radius: 2px;
+  height: 30px;
+  width: 600px;
+}
+.all-translations table {
+  width: 100%;
+}
+.all-translations table th.sortable.active {
+  background-color: rgb(237, 237, 237);
+}
+.all-translations table th.sortable.active.reverse {
+  transform: rotate(-180deg);
+}
+.all-translations table td a .url-prefix {
+  color: rgb(159, 159, 159);
+  font-size: 80%;
+  margin-right: 2px;
+}
+.all-translations table td .last_modified.ahead a {
+  color: #008000;
+}
+.all-translations table td .last_modified.behind a {
+  color: #ffa500;
+}
+.all-translations .document-warnings {
+  background-color: rgb(255, 215, 154);
+}
+.all-translations .search-times {
+  margin-top: 60px;
+}
+.all-translations .search-times p {
+  font-size: 70%;
+}
+.all-translations .pagination {
+  margin: 20px;
+  text-align: center;
+}
+.all-translations .pagination a.disabled {
+  color: rgb(159, 159, 159);
+}
+.all-translations .pagination a {
+  padding: 10px;
+}
+.all-translations div.filter-documents .filters {
+  float: left;
+  width: 300px;
+}
+.all-translations div.filter-documents .filters h4 {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 10px;
+}
+.all-translations div.filter-documents .filters ul.search-flaws-rows {
+  padding-left: 0;
+}
+.all-translations div.filter-documents .filters ul.search-flaws-rows li {
+  list-style: none;
+}
+.all-translations div.filter-documents .documents {
+  margin-left: 300px;
+}
+.all-translations div.filter-documents .documents h4.subheader {
+  margin-top: 2px;
+}
+.all-translations div.filter-documents .documents th.sortable {
+  cursor: ns-resize;
+}
+
+/*# sourceMappingURL=index.css.map */

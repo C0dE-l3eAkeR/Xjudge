@@ -1,0 +1,81 @@
+.theme-switcher-menu {
+  margin-bottom: 0.5rem;
+}
+.theme-switcher-menu .button.action > .button-wrap {
+  text-transform: none;
+}
+.theme-switcher-menu .themes-menu .button.button {
+  --button-bg: transparent;
+  --button-border-color: var(--button-bg);
+  --button-color: var(--text-primary);
+  border-bottom-width: 0;
+  font-size: var(--type-smaller-font-size);
+  width: 100%;
+}
+.theme-switcher-menu .themes-menu .button.button .button-wrap {
+  border-width: 1px;
+  font-weight: 400;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.theme-switcher-menu .themes-menu .button.button:focus {
+  --button-border-color: var(--button-secondary-border-focus);
+}
+.theme-switcher-menu .themes-menu .button.button:hover {
+  --button-bg: var(--border-secondary);
+}
+.theme-switcher-menu .active-menu-item .button-wrap,
+.theme-switcher-menu .active-menu-item:hover .button-wrap {
+  --button-bg: var(--background-primary);
+  --button-border-color: var(--border-secondary);
+}
+.theme-switcher-menu .active-menu-item:focus .button-wrap {
+  --button-border-color: var(--button-secondary-border-focus);
+}
+@media screen and (min-width: 769px) {
+  .theme-switcher-menu {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .theme-switcher-menu .themes-menu {
+    top: calc(100% - 1rem);
+  }
+  .theme-switcher-menu .themes-menu.show {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: max-content;
+    min-width: 130px;
+  }
+  .theme-switcher-menu .themes-menu .submenu-item {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.theme-switcher-menu > .button,
+.languages-switcher-menu > .button {
+  display: block;
+}
+.theme-switcher-menu > .button .button-wrap:after,
+.languages-switcher-menu > .button .button-wrap:after {
+  background-color: var(--icon-secondary);
+  content: "";
+  display: block;
+  height: 16px;
+  margin-left: auto;
+  mask-image: url("../../../assets/icons/chevron.svg");
+  mask-size: 16px;
+  width: 16px;
+}
+.theme-switcher-menu > .button[aria-expanded=true] .button-wrap:after,
+.languages-switcher-menu > .button[aria-expanded=true] .button-wrap:after {
+  transform: rotate(180deg);
+}
+@media screen and (min-width: 992px) {
+  .theme-switcher-menu > .button .button-wrap:after,
+  .languages-switcher-menu > .button .button-wrap:after {
+    content: unset;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

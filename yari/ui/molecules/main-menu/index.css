@@ -1,0 +1,62 @@
+ul.main-menu {
+  box-sizing: border-box;
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+  width: 100%;
+}
+ul.main-menu.show {
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  ul.main-menu.show {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  ul.main-menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 0 0;
+  }
+  ul.main-menu li:last-child {
+    flex-basis: inherit;
+  }
+  ul.main-menu .submenu.show {
+    display: none;
+  }
+  ul.main-menu .menu-toggle {
+    display: none;
+  }
+  ul.main-menu .top-level-entry-container {
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  ul.main-menu {
+    gap: 1rem;
+  }
+}
+
+/* Enable hover interaction if javascript is not available */
+@media screen and (min-width: 992px) {
+  ul.main-menu .submenu {
+    display: none;
+  }
+  ul.main-menu .top-level-entry-container:hover .submenu, ul.main-menu .top-level-entry-container:focus-within .submenu {
+    display: block;
+  }
+  .open-on-focus-within:focus-within .watch-submenu {
+    display: flex;
+  }
+  .open-on-focus-within:focus-within .submenu {
+    display: block;
+  }
+  .open-on-focus-within .submenu,
+  .open-on-focus-within .watch-submenu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

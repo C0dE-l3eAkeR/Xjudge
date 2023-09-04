@@ -1,0 +1,71 @@
+.all-flaws .search-error {
+  background-color: var(--background-warning);
+}
+.all-flaws h3 {
+  margin-top: 0;
+}
+.all-flaws h3 span.page {
+  color: var(--text-inactive);
+}
+.all-flaws td a .url-prefix,
+.all-flaws td .document-title-preview {
+  color: var(--text-inactive);
+  font-size: 80%;
+  margin-right: 2px;
+}
+.all-flaws td a,
+.all-flaws td .document-title-preview {
+  display: block;
+}
+.all-flaws .documents {
+  overflow-x: scroll;
+  width: 100%;
+}
+.all-flaws .documents .no-popularity {
+  color: var(--text-inactive);
+}
+.all-flaws .documents .document-flaws-fixable {
+  display: block;
+  font-size: 80%;
+}
+.all-flaws .search-times {
+  margin-top: 60px;
+}
+.all-flaws .search-times p {
+  font-size: 70%;
+}
+.all-flaws .pagination {
+  margin: 20px;
+  text-align: center;
+}
+.all-flaws .pagination a.disabled {
+  color: var(--text-inactive);
+}
+.all-flaws .pagination a {
+  padding: 10px;
+}
+.all-flaws div.filter-documents {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px 1fr;
+  margin: auto;
+  width: calc(100% - 40px);
+}
+.all-flaws div.filter-documents .filters h4 {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 10px;
+}
+.all-flaws div.filter-documents .filters ul.search-flaws-rows {
+  padding-left: 0;
+}
+.all-flaws div.filter-documents .filters ul.search-flaws-rows li {
+  list-style: none;
+}
+.all-flaws div.filter-documents .documents h4.subheader {
+  margin-top: 2px;
+}
+.all-flaws div.filter-documents .documents th.sortable {
+  cursor: ns-resize;
+}
+
+/*# sourceMappingURL=index.css.map */

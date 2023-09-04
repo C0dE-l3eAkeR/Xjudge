@@ -1,0 +1,17 @@
+.mdn-plus .submenu-icon {
+  background-color: var(--plus-accent-color);
+}
+.mdn-plus .note {
+  background-color: var(--background-information);
+}
+.mdn-plus .note .submenu-item-description {
+  display: block;
+  margin: 0.125rem;
+}
+@media screen and (min-width: 992px) {
+  .mdn-plus .mobile-only {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

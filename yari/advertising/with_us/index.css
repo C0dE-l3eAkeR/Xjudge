@@ -1,0 +1,105 @@
+@charset "UTF-8";
+main.advertise-with-us {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+main.advertise-with-us .stats-container {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  width: 100%;
+}
+main.advertise-with-us section {
+  margin: 0 auto;
+  max-width: 52rem;
+  padding: 0 1rem;
+}
+main.advertise-with-us section.stats-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem 2rem;
+}
+main.advertise-with-us section h1 {
+  margin-left: 0.5rem;
+  font-size: 3rem;
+  margin-top: 8rem;
+  text-align: center;
+}
+main.advertise-with-us section h1::after {
+  content: " ";
+  text-decoration: underline;
+  text-decoration-color: var(--text-link);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.1em;
+}
+main.advertise-with-us section h1::before {
+  background-color: var(--text-link);
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  mask: url("../../assets/m-logo.svg") no-repeat 50% 50%;
+  mask-size: cover;
+  transform: translate(-0.2em, 0.2em);
+  width: 1.2em;
+}
+main.advertise-with-us section h1::before {
+  background-color: var(--mdn-color-ads);
+}
+main.advertise-with-us section h1::after {
+  text-decoration-color: var(--mdn-color-ads);
+}
+main.advertise-with-us section .quote.owd {
+  background-color: var(--mdn-color-ads);
+  color: var(--background-primary);
+}
+main.advertise-with-us section .quote.owd .icon {
+  background-color: var(--background-primary);
+}
+main.advertise-with-us section .quote.pab {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+main.advertise-with-us section .quote.pab .icon {
+  background-color: var(--text-primary);
+}
+main.advertise-with-us section .stats {
+  display: grid;
+  gap: 0.3em;
+}
+@media screen and (max-width: 769px) {
+  main.advertise-with-us section .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 426px) {
+  main.advertise-with-us section .stats {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 769px) {
+  main.advertise-with-us section .stats {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+main.advertise-with-us section .stats li {
+  align-items: center;
+  background: var(--mdn-color-ads);
+  color: var(--background-primary);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+}
+main.advertise-with-us section .stats li .number {
+  font-size: 3rem;
+}
+main.advertise-with-us section .stats li .number svg {
+  transform: translateY(0.125em);
+}
+main.advertise-with-us section .stats li .legend {
+  font-size: 0.8rem;
+  max-width: 5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */

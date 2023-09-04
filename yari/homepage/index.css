@@ -1,0 +1,17 @@
+.homepage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+  overflow-y: visible;
+  position: relative;
+  width: 100%;
+}
+.homepage > * {
+  margin-top: 2rem;
+}
+.homepage > *:first-child {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

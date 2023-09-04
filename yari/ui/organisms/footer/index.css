@@ -1,0 +1,163 @@
+.page-footer {
+  background-color: var(--background-secondary);
+  padding: 2rem 1rem;
+  position: relative;
+}
+.page-footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.page-footer,
+.page-footer a {
+  color: var(--text-secondary);
+}
+.page-footer-logo-col p {
+  margin-top: 0;
+  max-width: 55ch;
+}
+.page-footer-app-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.page-footer-app-dl {
+  display: block;
+  max-width: 130px;
+}
+.page-footer-app-dl svg,
+.page-footer-app-dl img {
+  width: 100%;
+}
+.page-footer-app-dl.is-ms {
+  max-width: 110px;
+}
+.page-footer-moz {
+  align-items: center;
+  border-top: 1px solid var(--border-primary);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  padding-top: 1.5rem;
+}
+.page-footer-legal-text {
+  font-size: var(--type-tiny-font-size);
+  margin: 0;
+}
+.page-footer-legal-text a {
+  text-decoration: underline;
+}
+.page-footer-legal-text a:hover {
+  text-decoration: none;
+}
+
+.footer-moz-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--type-tiny-font-size);
+  gap: 1rem;
+}
+.footer-moz-logo-link {
+  display: flex;
+}
+.footer-moz-link {
+  text-decoration: underline;
+}
+.footer-moz-link:hover {
+  text-decoration: none;
+}
+
+.mdn-footer-logo {
+  display: block;
+  width: 50px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.social-icons li {
+  flex: 0 0 auto;
+}
+.social-icons .icon {
+  display: block;
+  height: 21px;
+  width: 21px;
+}
+
+.footer-nav-heading {
+  font: var(--type-smaller-font-size);
+  margin: 0 0 0.5rem;
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-nav-item {
+  font-size: var(--type-smaller-font-size);
+}
+
+@media screen and (min-width: 426px) {
+  .page-footer-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-areas: "logo  . " "nav1  nav2" "nav3  nav4" "moz   moz" "legal legal";
+    grid-template-columns: 1fr 1fr;
+  }
+  .page-footer-logo-col {
+    grid-area: logo;
+  }
+  .page-footer-nav-col-1 {
+    grid-area: nav1;
+  }
+  .page-footer-nav-col-2 {
+    grid-area: nav2;
+  }
+  .page-footer-nav-col-3 {
+    grid-area: nav3;
+  }
+  .page-footer-nav-col-4 {
+    grid-area: nav4;
+  }
+  .page-footer-app-col {
+    grid-area: app;
+  }
+  .page-footer-moz {
+    grid-area: moz;
+  }
+  .page-footer-legal {
+    grid-area: legal;
+  }
+  .page-footer-app-list {
+    flex-direction: row;
+  }
+  .page-footer-app-dl img,
+  .page-footer-app-dl svg {
+    height: 38px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .page-footer-grid {
+    gap: 1rem;
+    grid-template-areas: "logo  nav1  nav2  nav3  nav4" "moz   moz   moz   moz   moz" "legal legal legal legal  . ";
+    grid-template-columns: minmax(260px, 2fr) repeat(4, minmax(0, 1fr));
+  }
+  .page-footer-app-list {
+    flex-direction: column;
+  }
+  .page-footer-app-dl img,
+  .page-footer-app-dl svg {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .page-footer-grid {
+    gap: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

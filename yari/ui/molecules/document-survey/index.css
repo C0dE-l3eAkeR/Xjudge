@@ -1,0 +1,48 @@
+.document-survey {
+  background-color: #e6deff;
+  border: 5px solid #6800cf;
+  border-radius: 0.5rem;
+  color: #1b1b1b;
+  padding: 1rem;
+}
+.document-survey::before {
+  background: transparent url("../../../assets/icons/survey.svg") center center no-repeat;
+  background-size: cover;
+  content: "";
+  display: inline-block;
+  height: 33px;
+  position: absolute;
+  width: 32px;
+}
+.document-survey iframe {
+  border: 0;
+}
+.document-survey button[type=button],
+.document-survey summary {
+  cursor: pointer;
+}
+.document-survey details iframe {
+  margin: 0.9rem;
+  margin-bottom: 0;
+  width: calc(100% - 1.2rem);
+}
+.document-survey summary {
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+.document-survey summary:focus, .document-survey summary:hover {
+  text-decoration: inherit;
+}
+.document-survey .survey-header {
+  display: flex;
+  justify-content: space-between;
+}
+.document-survey .survey-header,
+.document-survey .survey-container {
+  padding-left: 2.5em;
+}
+.document-survey .survey-dismiss svg.icon {
+  color: #1b1b1b;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,11 @@
+@media screen and (min-width: 1200px) {
+  .table-container {
+    margin: 0;
+    width: 100%;
+  }
+  .table-container-inner {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=index-desktop-xl.css.map */

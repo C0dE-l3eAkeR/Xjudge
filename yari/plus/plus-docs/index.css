@@ -1,0 +1,41 @@
+.plus .article-actions-container {
+  display: flex;
+}
+.plus .main-page-content em {
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-color: var(--text-link);
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.1em;
+}
+.plus .main-page-content h1 {
+  color: var(--plus-accent-color);
+  /* MDN/Plus/Type/Overline/S */
+  font: 700 12px/120% Inter;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.plus .main-page-content h1 + blockquote {
+  border: revert;
+  border-radius: var(--elem-radius);
+  color: var(--text-primary);
+  margin: 1rem 0 2rem;
+  padding: revert;
+}
+.plus .main-page-content h1 + blockquote p:first-child {
+  font: var(--type-heading-h1-mobile);
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 769px) {
+  .plus .main-page-content h1 + blockquote p:first-child {
+    font: var(--type-heading-h1);
+  }
+}
+.plus .main-page-content h1 + blockquote p {
+  font-style: italic;
+}
+.plus .main-page-content img {
+  margin: 2rem 0;
+}
+
+/*# sourceMappingURL=index.css.map */

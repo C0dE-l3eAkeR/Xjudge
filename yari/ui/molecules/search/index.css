@@ -1,0 +1,219 @@
+.header-search {
+  max-width: 100%;
+}
+.header-search .search-widget {
+  margin: 0 auto;
+  max-width: 20rem;
+  position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .header-search .search-widget {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+.header-search .search-input-field {
+  -webkit-appearance: none; /* stylelint-disable-line property-no-vendor-prefix */
+  background-color: var(--background-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 100px;
+  caret-color: var(--text-link);
+  color: var(--text-primary);
+  height: var(--form-elem-height);
+  min-width: 5rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  width: 100%;
+}
+@keyframes blink {
+  from, to {
+    text-decoration-line: none;
+  }
+  50% {
+    text-decoration-line: underline;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-search .search-input-field:invalid {
+    width: 1rem;
+  }
+}
+.header-search .search-input-field:focus, .header-search .search-input-field:valid {
+  width: inherit;
+  /* When the search input has focus or has content,
+      show the clear search button */
+}
+.header-search .search-input-field:focus ~ .button.clear-search-button, .header-search .search-input-field:valid ~ .button.clear-search-button {
+  display: block;
+  right: 2.8rem;
+}
+.header-search .search-input-field:invalid, .header-search .search-input-field:invalid::placeholder {
+  animation: blink 2s step-end infinite;
+  caret-color: transparent;
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-search .search-input-field:invalid, .header-search .search-input-field:invalid::placeholder {
+    caret-color: initial;
+  }
+}
+.header-search .search-input-field:valid, .header-search .search-input-field:valid::placeholder {
+  animation: none;
+}
+.header-search .search-input-field:not(:focus):valid, .header-search .search-input-field:not(:focus):valid::placeholder {
+  text-decoration-line: none;
+}
+.header-search .search-input-field:not(:focus), .header-search .search-input-field:not(:focus)::placeholder {
+  animation: none;
+  text-decoration-line: underline;
+}
+.header-search .search-input-field:not(:focus)::placeholder {
+  animation: none;
+  text-decoration-line: underline;
+}
+.header-search .search-input-field:focus {
+  border-color: var(--category-color);
+  box-shadow: 0 0 0 3px var(--blend-color), 0 0 0 3px var(--category-color);
+  outline: 0 none;
+}
+.header-search .search-input-field, .header-search .search-input-field::placeholder {
+  font: var(--type-body-l);
+  opacity: 1;
+  text-decoration-color: var(--text-link);
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.1em;
+}
+.header-search .server-error {
+  color: var(--icon-critical);
+  margin: 0;
+}
+
+.header-search .search-results,
+.homepage-hero-search .search-results {
+  border: 1px solid var(--border-secondary);
+  border-radius: var(--elem-radius);
+  box-shadow: var(--shadow-01);
+  left: 0;
+  position: absolute;
+  top: 42px;
+  width: 100%;
+  z-index: var(--z-index-search-results);
+}
+.header-search .search-results,
+.header-search .search-results a[href],
+.header-search .search-results mark,
+.homepage-hero-search .search-results,
+.homepage-hero-search .search-results a[href],
+.homepage-hero-search .search-results mark {
+  color: var(--text-primary);
+}
+.header-search .search-results .indexing-warning,
+.homepage-hero-search .search-results .indexing-warning {
+  color: var(--icon-warning);
+}
+.header-search .search-results .nothing-found,
+.homepage-hero-search .search-results .nothing-found {
+  font-style: italic;
+}
+.header-search .search-results .result-item,
+.homepage-hero-search .search-results .result-item {
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--border-secondary);
+  font-size: var(--type-smaller-font-size);
+  word-break: break-word;
+}
+.header-search .search-results .result-item:first-child,
+.homepage-hero-search .search-results .result-item:first-child {
+  border-radius: var(--elem-radius) var(--elem-radius) 0 0;
+}
+.header-search .search-results .result-item:last-child,
+.homepage-hero-search .search-results .result-item:last-child {
+  border-radius: 0 0 var(--elem-radius) var(--elem-radius);
+}
+.header-search .search-results .result-item.nothing-found code,
+.homepage-hero-search .search-results .result-item.nothing-found code {
+  font-size: 0.8125rem;
+}
+.header-search .search-results .result-item > *,
+.homepage-hero-search .search-results .result-item > * {
+  display: block;
+  padding: 0.5rem;
+}
+.header-search .search-results .result-item:hover,
+.header-search .search-results .result-item.highlight,
+.homepage-hero-search .search-results .result-item:hover,
+.homepage-hero-search .search-results .result-item.highlight {
+  background-color: var(--border-secondary);
+}
+.header-search .search-results .result-item.qs-collection b::after,
+.homepage-hero-search .search-results .result-item.qs-collection b::after {
+  border: 1px solid var(--text-primary-red);
+  border-radius: 0.5rem;
+  content: "collection";
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.125rem;
+  vertical-align: super;
+}
+.header-search .search-results .result-item:hover,
+.header-search .search-results .result-item:focus,
+.homepage-hero-search .search-results .result-item:hover,
+.homepage-hero-search .search-results .result-item:focus {
+  cursor: pointer;
+}
+.header-search .search-results div:last-child,
+.homepage-hero-search .search-results div:last-child {
+  border-bottom: 0;
+}
+.header-search .search-results mark,
+.homepage-hero-search .search-results mark {
+  background-color: var(--mark-color);
+}
+.header-search .search-results small,
+.homepage-hero-search .search-results small {
+  overflow-wrap: break-word;
+}
+.header-search .search-results a,
+.homepage-hero-search .search-results a {
+  text-overflow: ellipsis;
+}
+.header-search .search-results div.searchindex-error,
+.homepage-hero-search .search-results div.searchindex-error {
+  color: var(--icon-critical);
+}
+
+.search-form {
+  display: flex;
+  position: relative;
+}
+
+.button.search-button,
+.button.clear-search-button {
+  --button-color: var(--icon-secondary);
+  --button-height: 1.5rem;
+  --button-padding: 0;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.25rem;
+  width: 1.5rem;
+}
+.button.search-button:hover,
+.button.clear-search-button:hover {
+  background: transparent;
+}
+@media screen and (min-width: 769px) {
+  .button.search-button,
+  .button.clear-search-button {
+    right: 1.2rem;
+    width: 1.5rem;
+  }
+}
+
+.button.clear-search-button {
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */

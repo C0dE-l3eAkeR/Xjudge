@@ -1,0 +1,20 @@
+.bookmark-menu > .button {
+  display: block;
+}
+.bookmark-menu .is-button-row {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.bookmark-menu #bookmark-delete {
+  margin-right: auto;
+}
+.bookmark-menu #bookmark-delete .icon {
+  background-color: var(--text-primary-red);
+}
+@media screen and (min-width: 769px) {
+  .bookmark-menu #bookmark-note {
+    max-height: max(100vh - 30rem, 5rem);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

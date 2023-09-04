@@ -1,0 +1,222 @@
+@charset "UTF-8";
+.plus-subscribe-wrapper {
+  background: var(--background-primary);
+}
+.plus-subscribe-wrapper .subscribe {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .plus-subscribe-wrapper .subscribe {
+    padding: 2rem 4rem;
+  }
+}
+.plus-subscribe-wrapper .subscribe h2 {
+  color: var(--text-primary);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 120%;
+  margin-bottom: 2rem;
+}
+.plus-subscribe-wrapper .subscribe .switch {
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+.plus-subscribe-wrapper .subscribe .wrapper,
+.plus-subscribe-wrapper .subscribe .wrapper-offline {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .wrapper-offline,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .wrapper-offline {
+  display: none;
+}
+@media screen and (min-width: 66rem) {
+  .plus-subscribe-wrapper .subscribe .wrapper,
+  .plus-subscribe-wrapper .subscribe .wrapper-offline {
+    align-items: stretch;
+    flex-direction: row;
+  }
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail {
+  align-items: center;
+  background-color: var(--text-secondary);
+  border-radius: 1rem;
+  color: var(--text-invert);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 20rem;
+  min-width: 16rem;
+  width: 100%;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail#plus5,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail#plus5 {
+  background-color: var(--text-primary-blue);
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail#plus10,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail#plus10 {
+  background-color: var(--text-primary-red);
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail#core,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail#core {
+  background-color: var(--text-primary-green);
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail h3,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail h3 {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem 1rem 0 0;
+  color: var(--text-primary);
+  font-size: 1em;
+  margin: 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  margin-top: 1rem;
+  padding: 0 2rem 2rem;
+  width: 100%;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info h3,
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info p,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info h3,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info p {
+  margin: 0;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .price,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .price {
+  align-content: center;
+  column-gap: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 3rem;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .price .sub-price,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .price .sub-price {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 650;
+  grid-column: 1/2;
+  justify-self: right;
+  line-height: 120%;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .price .free,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .price .free {
+  grid-column: 1/3;
+  justify-self: center;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .price .sub-length,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .price .sub-length {
+  font-size: 0.8rem;
+  font-style: normal;
+  grid-column: 2/3;
+  justify-self: left;
+  line-height: 120%;
+  margin: auto 0;
+  text-align: left;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .includes,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .includes {
+  align-self: flex-start;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info ul,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info ul {
+  align-self: flex-start;
+  list-style-type: "✔ ";
+  margin-left: 1rem;
+  width: 100%;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info ul li,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info ul li {
+  line-height: 1.75;
+  padding-left: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info ul li a,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info ul li a {
+  color: var(--text-invert);
+  text-decoration: underline;
+  width: fit-content;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info ul li a:hover,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info ul li a:hover {
+  text-decoration: none;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info ul li sup.new,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info ul li sup.new {
+  --new-background: var(--mdn-color-background-highlight);
+  --new-color: inherit;
+  margin-left: 0.25rem;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .sub-link,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .sub-link {
+  align-items: center;
+  align-self: center;
+  background: #1b1b1b;
+  border-radius: 1rem;
+  color: var(--text-primary);
+  display: flex;
+  font-weight: 620;
+  height: 2rem;
+  justify-content: center;
+  min-width: fit-content;
+  padding: 0.25rem 0.5rem;
+  width: calc(100% - 1rem);
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .terms,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .terms {
+  color: var(--text-invert);
+  font-size: 14px;
+  font-style: italic;
+  margin-top: auto;
+  text-decoration: underline;
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .terms.external::after,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .terms.external::after {
+  background-color: var(--text-invert);
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .current,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .current {
+  background-color: initial;
+  border: 1px solid var(--mdn-color-black);
+  color: var(--mdn-color-black);
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .na,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .na {
+  background-color: var(--mdn-background-light-grey);
+  border: 1px solid var(--mdn-background-light-grey);
+  color: var(--mdn-color-dark-grey);
+}
+.plus-subscribe-wrapper .subscribe .wrapper .subscribe-detail .sub-info .na::after,
+.plus-subscribe-wrapper .subscribe .wrapper-offline .subscribe-detail .sub-info .na::after {
+  background-color: var(--mdn-color-dark-grey);
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-left: 0.3rem;
+  mask-image: url("../../../assets/icons/question-mark.svg");
+  width: 16px;
+}
+
+.plus-for-companies {
+  color: var(--text-primary);
+  margin: 0;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */

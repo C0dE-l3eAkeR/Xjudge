@@ -1,0 +1,116 @@
+.mdn-form {
+  font-family: var(--font-body);
+  font-size: var(--type-smaller-font-size);
+  font-weight: var(--font-body-strong-weight);
+}
+
+.mdn-form-item {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+.mdn-form-item:first-child {
+  padding-top: 0;
+}
+.mdn-form-item.is-button-row {
+  display: flex;
+  justify-content: flex-end;
+}
+.mdn-form-item.is-button-row .button {
+  width: auto;
+}
+.mdn-form-item [type=text],
+.mdn-form-item [type=email],
+.mdn-form-item textarea,
+.mdn-form-item select {
+  background: var(--background-primary);
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+  flex: 1 1 100%;
+  font-size: var(--type-smaller-font-size);
+  min-width: 0;
+  padding: 0.5rem;
+}
+.mdn-form-item [type=text]:focus,
+.mdn-form-item [type=email]:focus,
+.mdn-form-item textarea:focus,
+.mdn-form-item select:focus {
+  border: 1px solid var(--button-secondary-border-focus);
+  box-shadow: var(--focus-effect);
+  outline: 0 none;
+}
+.mdn-form-item select {
+  appearance: none;
+}
+.mdn-form-item .select-wrap {
+  display: flex;
+  flex: 1 1 100%;
+  position: relative;
+}
+.mdn-form-item .select-wrap::after {
+  background-color: var(--icon-primary);
+  content: "";
+  display: block;
+  height: 16px;
+  mask-image: url("../../../assets/icons/small-arrow.svg");
+  mask-size: cover;
+  pointer-events: none;
+  position: absolute;
+  right: 0.5rem;
+  top: calc(50% - 0.5rem);
+  width: 16px;
+}
+.mdn-form-item select,
+.mdn-form-item label {
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.mdn-form-item :invalid {
+  border-color: var(--form-invalid-color);
+}
+.mdn-form-item :invalid:focus {
+  border-color: var(--form-invalid-focus-color);
+  box-shadow: 0 0 0 3px var(--form-invalid-focus-effect-color);
+}
+.mdn-form-item .limit {
+  color: var(--form-limit-color);
+  font-size: 0.6875rem;
+  margin-left: auto;
+}
+.mdn-form-item .limit b {
+  color: var(--form-limit-color-emphasis);
+}
+.mdn-form-item .limit.invalid b {
+  color: var(--form-invalid-color);
+}
+
+.modal-body .mdn-form-item,
+.mdn-form.mdn-form-big .mdn-form-item {
+  padding-top: 1.5rem;
+}
+.modal-body .mdn-form-item:first-child,
+.mdn-form.mdn-form-big .mdn-form-item:first-child {
+  padding-top: 0;
+}
+.modal-body .mdn-form-item label,
+.modal-body .mdn-form-item textarea,
+.modal-body .mdn-form-item [type=text],
+.modal-body .mdn-form-item [type=email],
+.mdn-form.mdn-form-big .mdn-form-item label,
+.mdn-form.mdn-form-big .mdn-form-item textarea,
+.mdn-form.mdn-form-big .mdn-form-item [type=text],
+.mdn-form.mdn-form-big .mdn-form-item [type=email] {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.modal-body .button-wrap,
+.mdn-form.mdn-form-big .button-wrap {
+  font-size: 1rem;
+  height: auto;
+  line-height: 1.5;
+  padding: 0.5rem 2rem;
+}
+
+/*# sourceMappingURL=index.css.map */

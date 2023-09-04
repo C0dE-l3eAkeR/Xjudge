@@ -1,0 +1,12 @@
+.pagination {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.pagination-label {
+  font-size: var(--type-smaller-font-size);
+}
+
+/*# sourceMappingURL=index.css.map */
