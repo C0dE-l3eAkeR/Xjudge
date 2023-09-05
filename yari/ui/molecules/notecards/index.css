@@ -1,0 +1,130 @@
+.notecard {
+  --note-background: var(--background-information);
+  --note-theme: var(--icon-information);
+  background-color: var(--note-background);
+  border: 1px solid var(--border-secondary);
+  border-left: 4px solid var(--note-theme);
+  border-radius: var(--elem-radius);
+  box-shadow: var(--shadow-01);
+  margin: 1rem 0;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+.notecard,
+.notecard p,
+.notecard li {
+  color: var(--text-secondary);
+}
+.notecard p {
+  line-height: 2;
+  margin: 0 !important;
+}
+.notecard:before {
+  background-color: var(--note-theme);
+  content: "";
+  display: block;
+  height: 1rem;
+  left: 1rem;
+  mask-image: url("../../../assets/icons/note-info.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  position: absolute;
+  top: 1.5rem;
+  width: 1rem;
+}
+.notecard.inline {
+  font: var(--type-body-s);
+  margin: 0.5rem;
+  padding: 0.125rem 0.375rem 0.125rem 1.5rem;
+}
+.notecard.inline::before {
+  display: block;
+  height: 0.8rem;
+  left: 0.2rem;
+  top: 0.1875rem;
+  width: 0.8rem;
+}
+.notecard.warning {
+  --note-background: var(--background-warning);
+  --note-theme: var(--icon-warning);
+}
+.notecard.warning:before {
+  mask-image: url("../../../assets/icons/note-warning.svg");
+}
+.notecard.nonstandard {
+  --note-background: var(--background-warning);
+  --note-theme: var(--icon-warning);
+}
+.notecard.nonstandard:before {
+  mask-image: url("../../../assets/icons/nonstandard.svg");
+}
+.notecard.error, .notecard.negative {
+  --note-background: var(--background-critical);
+  --note-theme: var(--icon-critical);
+}
+.notecard.error:before, .notecard.negative:before {
+  mask-image: url("../../../assets/icons/note-deprecated.svg");
+}
+.notecard.deprecated {
+  --note-background: var(--background-critical);
+  --note-theme: var(--icon-critical);
+}
+.notecard.deprecated:before {
+  mask-image: url("../../../assets/icons/deprecated.svg");
+}
+.notecard.experimental:before {
+  mask-image: url("../../../assets/icons/experimental.svg");
+}
+.notecard.success {
+  --note-background: var(--background-success);
+  --note-theme: var(--icon-success);
+}
+.notecard.success:before {
+  mask-image: url("../../../assets/icons/note-info.svg");
+}
+.notecard ul,
+.notecard ol {
+  padding-left: 2rem;
+}
+.notecard ul,
+.notecard p {
+  padding-bottom: 0.5rem;
+}
+.notecard ul:last-child,
+.notecard p:last-child {
+  padding-bottom: 0;
+}
+.notecard:last-of-type {
+  margin-bottom: 2rem;
+}
+.notecard:first-of-type {
+  margin-top: 2rem;
+}
+.notecard > *:first-child {
+  margin-top: 0;
+}
+.notecard > *:last-child *:last-child {
+  margin-bottom: 0;
+}
+.notecard h1,
+.notecard h2,
+.notecard h3,
+.notecard h4,
+.notecard h5,
+.notecard h6 {
+  color: var(--text-primary);
+  font: var(--type-base-font-size-rem);
+  margin-bottom: 0.5rem;
+}
+
+.main-content .notecard a:not(.button),
+.main-content .notecard code {
+  color: var(--notecard-link-color);
+}
+.main-content .notecard a:not(.button):hover,
+.main-content .notecard code:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

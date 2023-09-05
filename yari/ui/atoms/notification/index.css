@@ -1,0 +1,11 @@
+.notification-container {
+  background-color: violet;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+.notification-container p {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

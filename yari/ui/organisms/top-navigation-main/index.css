@@ -1,0 +1,169 @@
+.top-navigation-main {
+  display: none;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+.show-nav .top-navigation-main {
+  display: flex;
+  flex-direction: column;
+}
+.top-navigation-main .auth-container {
+  order: 0;
+}
+.top-navigation-main .header-search {
+  order: 1;
+}
+.top-navigation-main .main-nav {
+  order: 2;
+}
+.top-navigation-main .user-menu {
+  order: 3;
+}
+.top-navigation-main .top-level-entry-container {
+  position: relative;
+}
+.top-navigation-main .top-level-entry-container .submenu {
+  z-index: var(--z-index-nav-menu);
+}
+.top-navigation-main .theme-toggle {
+  align-self: end;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .top-navigation-main .theme-toggle {
+    align-self: initial;
+    margin-bottom: initial;
+  }
+}
+.top-navigation-main .button.action:hover {
+  --button-bg: var(--border-secondary);
+}
+.is-transparent .top-navigation-main .button.action:not(:focus):hover {
+  --button-border-color: transparent;
+}
+
+.is-transparent .top-navigation-main .button.action:hover {
+  --button-bg: var(--accent-primary-engage);
+}
+
+.top-navigation-main .button.action.search-button:hover {
+  --button-bg: transparent;
+}
+.top-navigation-main .top-level-entry {
+  background: none;
+  border-top: 1px solid var(--border-secondary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  padding: 1rem 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+.top-navigation-main .top-level-entry:link, .top-navigation-main .top-level-entry:visited {
+  color: var(--text-secondary);
+}
+.top-navigation-main .top-level-entry.menu-toggle {
+  min-height: 53px;
+  padding: 0.5rem;
+}
+.top-navigation-main .top-level-entry sup.new {
+  --new-background: var(--text-primary-blue);
+  --new-background-beta: var(--learn-accent-color);
+  --new-color: var(--background-primary);
+  align-self: flex-start;
+}
+@media screen and (max-width: 992px -1) {
+  .top-navigation-main .top-level-entry.button {
+    --button-color: var(--text-secondary);
+    --button-padding: 0;
+    --button-radius: 0;
+  }
+  .top-navigation-main .top-level-entry.button .button-wrap {
+    background: none;
+    border: none;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    padding: 0;
+    text-transform: initial;
+  }
+  .top-navigation-main .top-level-entry.button:focus {
+    --button-focus-effect: none;
+  }
+  .top-navigation-main .top-level-entry.menu-link {
+    min-height: 53px;
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .top-navigation-main .top-level-entry {
+    border-radius: var(--elem-radius);
+    border-top: none;
+    padding: 0.5rem;
+  }
+  .top-navigation-main .top-level-entry:hover, .top-navigation-main .top-level-entry:focus {
+    background-color: var(--category-color-background);
+    color: var(--category-color);
+    text-decoration: none;
+  }
+  .top-navigation-main .top-level-entry.button {
+    padding: 0;
+  }
+}
+.top-navigation-main .menu-toggle {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.top-navigation-main .menu-toggle:after {
+  background-color: var(--icon-primary);
+  content: "";
+  height: var(--icon-size);
+  margin-left: 0.2em;
+  margin-top: 0.2em;
+  mask-image: url("../../../assets/icons/chevron.svg");
+  width: var(--icon-size);
+}
+.top-navigation-main .menu-toggle[aria-expanded=true]::after {
+  transform: rotate(180deg);
+}
+.top-navigation-main .menu-toggle + .top-level-entry {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .top-navigation-main {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 0.5rem;
+    left: inherit;
+    padding: 0;
+    position: initial;
+    top: inherit;
+    z-index: inherit;
+  }
+  .show-nav .top-navigation-main {
+    flex-direction: row;
+  }
+  .top-navigation-main .main-nav {
+    margin-right: auto;
+    order: 0;
+    width: max-content;
+  }
+  .top-navigation-main .header-search {
+    order: 1;
+  }
+  .top-navigation-main .auth-container {
+    order: 2;
+  }
+  .top-navigation-main .user-menu {
+    order: 3;
+  }
+  .top-navigation-main .menu-toggle + .top-level-entry {
+    display: inline-flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

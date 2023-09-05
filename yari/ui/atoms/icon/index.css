@@ -1,0 +1,231 @@
+.icon {
+  --size: var(--icon-size, 1rem);
+  background-color: var(--icon-primary);
+  display: inline-block;
+  flex-shrink: 0;
+  height: var(--size);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  vertical-align: middle;
+  width: var(--size);
+}
+.icon.icon-add-filled {
+  mask-image: url("../../../assets/icons/add-filled.svg");
+}
+.icon.icon-add {
+  mask-image: url("../../../assets/icons/add.svg");
+}
+.icon.icon-altname {
+  mask-image: url("../../../assets/icons/altname.svg");
+}
+.icon.icon-bell-filled {
+  mask-image: url("../../../assets/icons/bell-filled.svg");
+}
+.icon.icon-bell {
+  mask-image: url("../../../assets/icons/bell.svg");
+}
+.icon.icon-bookmark-filled {
+  mask-image: url("../../../assets/icons/bookmark-filled.svg");
+}
+.icon.icon-bookmark {
+  mask-image: url("../../../assets/icons/bookmark.svg");
+}
+.icon.icon-cancel {
+  mask-image: url("../../../assets/icons/cancel.svg");
+}
+.icon.icon-chatgpt {
+  mask-image: url("../../../assets/icons/chatgpt.svg");
+}
+.icon.icon-checkmark {
+  mask-image: url("../../../assets/icons/checkmark.svg");
+}
+.icon.icon-chevron {
+  mask-image: url("../../../assets/icons/chevron.svg");
+}
+.icon.icon-chrome {
+  mask-image: url("../../../assets/icons/chrome.svg");
+}
+.icon.icon-critical {
+  mask-image: url("../../../assets/icons/critical.svg");
+}
+.icon.icon-deno {
+  mask-image: url("../../../assets/icons/deno.svg");
+}
+.icon.icon-deprecated {
+  mask-image: url("../../../assets/icons/deprecated.svg");
+}
+.icon.icon-desktop {
+  mask-image: url("../../../assets/icons/desktop.svg");
+}
+.icon.icon-disabled {
+  mask-image: url("../../../assets/icons/disabled.svg");
+}
+.icon.icon-edge {
+  mask-image: url("../../../assets/icons/edge.svg");
+}
+.icon.icon-edit {
+  mask-image: url("../../../assets/icons/edit.svg");
+}
+.icon.icon-ellipses {
+  mask-image: url("../../../assets/icons/ellipses.svg");
+}
+.icon.icon-experimental {
+  mask-image: url("../../../assets/icons/experimental.svg");
+}
+.icon.icon-external {
+  mask-image: url("../../../assets/icons/external.svg");
+}
+.icon.icon-eye-filled {
+  mask-image: url("../../../assets/icons/eye-filled.svg");
+}
+.icon.icon-eye {
+  mask-image: url("../../../assets/icons/eye.svg");
+}
+.icon.icon-feed {
+  mask-image: url("../../../assets/icons/feed.svg");
+}
+.icon.icon-filter {
+  mask-image: url("../../../assets/icons/filter.svg");
+}
+.icon.icon-footnote {
+  mask-image: url("../../../assets/icons/footnote.svg");
+}
+.icon.icon-github-mark-small {
+  mask-image: url("../../../assets/icons/github-mark-small.svg");
+}
+.icon.icon-ie {
+  mask-image: url("../../../assets/icons/ie.svg");
+}
+.icon.icon-information {
+  mask-image: url("../../../assets/icons/information.svg");
+}
+.icon.icon-language {
+  mask-image: url("../../../assets/icons/language.svg");
+}
+.icon.icon-menu-filled {
+  mask-image: url("../../../assets/icons/menu-filled.svg");
+}
+.icon.icon-menu {
+  mask-image: url("../../../assets/icons/menu.svg");
+}
+.icon.icon-mobile {
+  mask-image: url("../../../assets/icons/mobile.svg");
+}
+.icon.icon-more {
+  mask-image: url("../../../assets/icons/more.svg");
+}
+.icon.icon-theme-dark {
+  mask-image: url("../../../assets/icons/theme-dark.svg");
+}
+.icon.icon-next {
+  mask-image: url("../../../assets/icons/next.svg");
+}
+.icon.icon-no {
+  mask-image: url("../../../assets/icons/no.svg");
+}
+.icon.icon-nodejs {
+  mask-image: url("../../../assets/icons/nodejs.svg");
+}
+.icon.icon-nonstandard {
+  mask-image: url("../../../assets/icons/nonstandard.svg");
+}
+.icon.icon-note-info {
+  mask-image: url("../../../assets/icons/note-info.svg");
+}
+.icon.icon-note-warning {
+  mask-image: url("../../../assets/icons/note-warning.svg");
+}
+.icon.icon-note-deprecated {
+  mask-image: url("../../../assets/icons/note-deprecated.svg");
+}
+.icon.icon-opera {
+  mask-image: url("../../../assets/icons/opera.svg");
+}
+.icon.icon-padlock {
+  mask-image: url("../../../assets/icons/padlock.svg");
+}
+.icon.icon-partial {
+  mask-image: url("../../../assets/icons/partial.svg");
+}
+.icon.icon-prefix {
+  mask-image: url("../../../assets/icons/prefix.svg");
+}
+.icon.icon-preview {
+  mask-image: url("../../../assets/icons/preview.svg");
+}
+.icon.icon-previous {
+  mask-image: url("../../../assets/icons/previous.svg");
+}
+.icon.icon-quote {
+  mask-image: url("../../../assets/icons/quote.svg");
+}
+.icon.icon-safari {
+  mask-image: url("../../../assets/icons/safari.svg");
+}
+.icon.icon-samsunginternet {
+  mask-image: url("../../../assets/icons/samsunginternet.svg");
+}
+.icon.icon-search {
+  mask-image: url("../../../assets/icons/search.svg");
+}
+.icon.icon-send {
+  mask-image: url("../../../assets/icons/send.svg");
+}
+.icon.icon-server {
+  mask-image: url("../../../assets/icons/server.svg");
+}
+.icon.icon-sidebar {
+  mask-image: url("../../../assets/icons/sidebar.svg");
+}
+.icon.icon-simple-firefox {
+  mask-image: url("../../../assets/icons/simple-firefox.svg");
+}
+.icon.icon-small-arrow {
+  mask-image: url("../../../assets/icons/small-arrow.svg");
+}
+.icon.icon-theme-light {
+  mask-image: url("../../../assets/icons/theme-light.svg");
+}
+.icon.icon-star-filled {
+  mask-image: url("../../../assets/icons/star-filled.svg");
+}
+.icon.icon-star {
+  mask-image: url("../../../assets/icons/star.svg");
+}
+.icon.icon-theme-os-default {
+  mask-image: url("../../../assets/icons/theme-os-default.svg");
+}
+.icon.icon-thumbs-down {
+  mask-image: url("../../../assets/icons/thumbs-down.svg");
+}
+.icon.icon-thumbs-up {
+  mask-image: url("../../../assets/icons/thumbs-up.svg");
+}
+.icon.icon-trash {
+  mask-image: url("../../../assets/icons/trash.svg");
+}
+.icon.icon-twitter {
+  mask-image: url("../../../assets/icons/twitter.svg");
+}
+.icon.icon-unknown {
+  mask-image: url("../../../assets/icons/unknown.svg");
+}
+.icon.icon-warning {
+  mask-image: url("../../../assets/icons/warning.svg");
+}
+.icon.icon-webview {
+  mask-image: url("../../../assets/icons/webview.svg");
+}
+.icon.icon-yes {
+  mask-image: url("../../../assets/icons/yes.svg");
+}
+.icon.icon-yes-circle {
+  mask-image: url("../../../assets/icons/yes-circle.svg");
+}
+
+svg.icon {
+  background: transparent;
+  color: var(--icon-primary);
+}
+
+/*# sourceMappingURL=index.css.map */

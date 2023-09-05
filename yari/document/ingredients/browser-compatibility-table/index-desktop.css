@@ -1,0 +1,75 @@
+@media screen and (min-width: 426px) {
+  .bc-table thead {
+    display: table-header-group;
+  }
+  .bc-table thead .bc-platforms th {
+    vertical-align: revert;
+  }
+  .bc-table td,
+  .bc-table th {
+    background: inherit;
+    padding: 0.25rem;
+    width: 2rem;
+  }
+  .bc-table td.bc-support {
+    padding: 0;
+  }
+  .bc-table td.bc-support > button {
+    padding: 0.25rem;
+  }
+  .bc-table tr.bc-history-desktop {
+    display: table-row;
+  }
+  .table-container {
+    margin: 0 -3rem;
+    overflow: auto;
+    width: 100vw;
+  }
+  .table-container-inner {
+    min-width: max-content;
+    padding: 0 3rem;
+    position: relative;
+  }
+  .table-container-inner:after {
+    bottom: 0;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: 0;
+    width: 10px;
+  }
+  .bc-support-level,
+  .bc-browser-name {
+    display: none;
+  }
+  .bc-notes-list {
+    margin-left: 20%;
+    width: auto;
+  }
+  .bc-support .bc-support-level {
+    display: none;
+  }
+  .bc-support[aria-expanded=true] {
+    position: relative;
+  }
+  .bc-support[aria-expanded=true]:after {
+    background: var(--text-primary);
+    bottom: -1px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .bc-support[aria-expanded=true] .bc-history-mobile {
+    display: none;
+  }
+  .bc-has-history {
+    cursor: pointer;
+  }
+  .bc-has-history:hover {
+    background: var(--background-secondary);
+  }
+}
+
+/*# sourceMappingURL=index-desktop.css.map */

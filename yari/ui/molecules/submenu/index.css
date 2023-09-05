@@ -1,0 +1,186 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-stretch: 75% 100%;
+  font-style: oblique 0deg 20deg;
+  font-weight: 1 999;
+  src: url("../../assets/fonts/Inter.var.woff2") format("woff2 supports variations"), url("../../assets/fonts/Inter.var.woff2") format("woff2-variations");
+}
+.submenu {
+  background-color: var(--background-primary);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.submenu li {
+  width: 100%;
+}
+.submenu a,
+.submenu .submenu-item {
+  align-items: center;
+  border: 1px solid transparent;
+  color: var(--text-primary);
+  display: flex;
+  height: 100%;
+  padding: 0.5rem;
+  width: 100%;
+}
+li:last-child .submenu a:not(:focus),
+li:last-child .submenu .submenu-item:not(:focus) {
+  border-bottom-color: transparent;
+}
+.submenu a:hover,
+.submenu .submenu-item:hover {
+  background-color: var(--border-secondary);
+  text-decoration: none;
+}
+.main-menu .submenu a:hover,
+.main-menu .submenu .submenu-item:hover {
+  background-color: var(--background-secondary);
+}
+
+.submenu a:focus,
+.submenu .submenu-item:focus {
+  border: 1px solid var(--button-secondary-border-focus);
+  box-shadow: var(--button-focus-effect);
+}
+.submenu a .icon,
+.submenu .submenu-item .icon {
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  .submenu.inline-submenu-lg {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--elem-radius);
+    box-shadow: var(--shadow-02);
+    max-width: 25rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: calc(100% + 4px);
+    width: max-content;
+    z-index: var(--z-index-mid);
+    /*
+        Creates a space between the top-level menu and the submenu that
+        keeps the menu open when the cursor moves to the menu
+      */
+  }
+  .main-menu .submenu.inline-submenu-lg {
+    background-color: var(--background-primary);
+  }
+  .submenu.inline-submenu-lg .submenu-item {
+    border-radius: var(--elem-radius);
+    padding: 0.75rem;
+  }
+  .submenu.inline-submenu-lg:before {
+    content: "";
+    display: block;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: -8px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .submenu:not(.inline-submenu-lg) {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--elem-radius);
+    box-shadow: var(--shadow-02);
+    max-width: 25rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: calc(100% + 4px);
+    width: max-content;
+    z-index: var(--z-index-mid);
+    /*
+        Creates a space between the top-level menu and the submenu that
+        keeps the menu open when the cursor moves to the menu
+      */
+  }
+  .main-menu .submenu:not(.inline-submenu-lg) {
+    background-color: var(--background-primary);
+  }
+  .submenu:not(.inline-submenu-lg) .submenu-item {
+    border-radius: var(--elem-radius);
+    padding: 0.75rem;
+  }
+  .submenu:not(.inline-submenu-lg):before {
+    content: "";
+    display: block;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: -8px;
+    width: 100%;
+  }
+}
+
+.submenu-header {
+  display: block;
+  padding: 1rem;
+}
+.submenu-header .submenu-item {
+  padding: 0;
+}
+.submenu-header .submenu-item:hover {
+  background: none;
+}
+@media screen and (min-width: 769px) {
+  .submenu-header {
+    border-bottom: 1px solid var(--border-primary);
+  }
+}
+
+.submenu-icon {
+  background-color: var(--icon-primary);
+  height: 2rem;
+  margin-right: 0.75rem;
+  position: relative;
+  width: 0.2rem;
+}
+
+.submenu-item-heading,
+.submenu-item {
+  font-size: var(--type-smaller-font-size);
+}
+@media screen and (min-width: 769px) {
+  .submenu-item-heading:not(:only-child),
+  .submenu-item:not(:only-child) {
+    font-weight: var(--font-body-strong-weight);
+  }
+}
+
+.submenu-item-description {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .submenu-item-description {
+    display: block;
+    font-size: var(--type-tiny-font-size);
+    margin: 0.25rem 0 0;
+  }
+}
+
+.submenu-item-subtext {
+  font-weight: var(--font-body-strong-weight);
+}
+
+.submenu-item-dot ~ .submenu-content-container > .submenu-item-heading::after {
+  background: var(--text-primary-blue);
+  border: 1px solid var(--background-primary);
+  border-radius: 2rem;
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  margin-left: 0.5rem;
+  width: 0.5rem;
+}
+
+.active-menu-item {
+  background-color: var(--background-primary);
+  border-color: var(--border-secondary);
+}
+
+/*# sourceMappingURL=index.css.map */

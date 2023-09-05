@@ -1,0 +1,17 @@
+.logo {
+  align-items: center;
+  display: flex;
+}
+.logo svg {
+  height: 1.5rem;
+  margin-top: 0.3rem;
+}
+.logo .logo-m,
+.logo .logo-_ {
+  fill: var(--text-link);
+}
+.logo .logo-text {
+  fill: var(--text-primary);
+}
+
+/*# sourceMappingURL=index.css.map */

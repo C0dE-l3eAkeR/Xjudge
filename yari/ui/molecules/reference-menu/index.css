@@ -1,0 +1,62 @@
+.references .desktop-only {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .references .desktop-only {
+    display: inherit;
+  }
+  .references .mobile-only {
+    display: none;
+  }
+}
+
+.html-link-container a:hover .submenu-icon.html,
+.html-link-container a:focus .submenu-icon.html {
+  background: var(--html-accent-color) !important;
+}
+
+.css-link-container a:hover .submenu-icon.css,
+.css-link-container a:focus .submenu-icon.css {
+  background-color: var(--css-accent-color) !important;
+}
+
+.javascript-link-container a:hover .submenu-icon.javascript,
+.javascript-link-container a:focus .submenu-icon.javascript {
+  background-color: var(--js-accent-color) !important;
+}
+
+.http-link-container a:hover .submenu-icon.http,
+.http-link-container a:focus .submenu-icon.http {
+  background-color: var(--http-accent-color) !important;
+}
+
+.apis-link-container a:hover .submenu-icon.apis,
+.apis-link-container a:focus .submenu-icon.apis {
+  background-color: var(--apis-accent-color) !important;
+}
+
+.learn-link-container a:hover .submenu-icon.learn,
+.learn-link-container a:focus .submenu-icon.learn {
+  background-color: var(--learn-accent-color) !important;
+}
+
+.submenu-icon.html {
+  background-color: var(--html-accent-engage);
+}
+.submenu-icon.css {
+  background-color: var(--css-accent-engage);
+}
+.submenu-icon.javascript {
+  background-color: var(--js-accent-engage);
+}
+.submenu-icon.http {
+  background-color: var(--http-accent-engage);
+}
+.submenu-icon.apis {
+  background-color: var(--apis-accent-engage);
+}
+.submenu-icon.learn {
+  background-color: var(--learn-accent-engage);
+}
+
+/*# sourceMappingURL=index.css.map */

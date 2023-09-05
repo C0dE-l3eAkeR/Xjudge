@@ -1,0 +1,96 @@
+@charset "UTF-8";
+main.contribute {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+main.contribute .stats-container {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  width: 100%;
+}
+main.contribute section {
+  margin: 0 auto;
+  max-width: 52rem;
+  padding: 0 1rem;
+}
+main.contribute section.stats-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem 2rem;
+}
+main.contribute section h1 {
+  margin-left: 0.5rem;
+  font-size: 3rem;
+  margin-top: 8rem;
+  text-align: center;
+}
+main.contribute section h1::after {
+  content: " ";
+  text-decoration: underline;
+  text-decoration-color: var(--text-link);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.1em;
+}
+main.contribute section h1::before {
+  background-color: var(--text-link);
+  content: "";
+  display: inline-block;
+  height: 1.2em;
+  mask: url("../../assets/m-logo.svg") no-repeat 50% 50%;
+  mask-size: cover;
+  transform: translate(-0.2em, 0.2em);
+  width: 1.2em;
+}
+main.contribute section .quote.owd {
+  background-color: var(--text-link);
+  color: var(--background-primary);
+}
+main.contribute section .quote.owd .icon {
+  background-color: var(--background-primary);
+}
+main.contribute section .quote.pab {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+main.contribute section .quote.pab .icon {
+  background-color: var(--text-primary);
+}
+main.contribute section .stats {
+  display: grid;
+  gap: 0.3em;
+}
+@media screen and (max-width: 769px) {
+  main.contribute section .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 426px) {
+  main.contribute section .stats {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 769px) {
+  main.contribute section .stats {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+main.contribute section .stats li {
+  align-items: center;
+  background: var(--text-link);
+  color: var(--background-primary);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+}
+main.contribute section .stats li .number {
+  font-size: 3rem;
+}
+main.contribute section .stats li .legend {
+  font-size: 0.8rem;
+  max-width: 5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */

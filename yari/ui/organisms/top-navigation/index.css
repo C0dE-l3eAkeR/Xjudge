@@ -1,0 +1,46 @@
+.top-navigation {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--border-primary);
+  position: relative;
+  width: 100%;
+  /* Wrapper strictly used for containing the logo and menu toggle */
+}
+.top-navigation .container {
+  align-items: center;
+  background-color: var(--background-primary);
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--gutter);
+}
+@media screen and (min-width: 769px) {
+  .top-navigation .container {
+    background-color: transparent;
+  }
+}
+.top-navigation.is-transparent {
+  background-color: transparent;
+}
+.top-navigation .top-navigation-wrap {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: var(--top-nav-height);
+  justify-content: space-between;
+}
+.top-navigation.show-nav {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.top-navigation.show-nav .container {
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .main-menu-toggle {
+    display: none;
+  }
+  .top-navigation .top-navigation-wrap {
+    flex: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

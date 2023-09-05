@@ -1,0 +1,17 @@
+.signout-form {
+  padding: 0.5rem;
+}
+@media screen and (min-width: 769px) {
+  .signout-form {
+    border-top: 1px solid var(--border-primary);
+  }
+}
+
+button.signout-button {
+  width: 100%;
+}
+button.signout-button:hover, button.signout-button:focus {
+  background-color: var(--background-secondary);
+}
+
+/*# sourceMappingURL=index.css.map */
