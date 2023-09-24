@@ -1,72 +1,54 @@
 <?php
-class Contest
-{
-    private $id;
-    private $name;
-    private $problems;
-    private $startTime;
-    private $endTime;
-    private $duration;
 
-    public function __construct($name, $problems, $startTime, $endTime, $duration)
-    {
+
+class Contest {
+    public $id;
+    public $name;
+    public $duration;
+    public $startTime;
+    public $endTime;
+
+    public function __construct($id, $name, $duration, $startTime, $endTime) {
+        $this->id = $id;
         $this->name = $name;
-        $this->problems = $problems;
+        $this->duration = $duration;
         $this->startTime = $startTime;
         $this->endTime = $endTime;
-        $this->duration = $duration;
-    }
-
-    // Add getters and setters for the private properties if needed
-
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    public function getProblems()
-    {
-        return $this->problems;
-    }
-
-    public function getStartTime()
-    {
-        return $this->startTime;
-    }
-
-    public function getEndTime()
-    {
-        return $this->endTime;
-    }
-
-    public function getDuration()
-    {
-        return $this->duration;
-    }
-
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    // You can add more methods here as needed
-
-    // To convert the Contest object to JSON for API responses
-    public function toJSON()
-    {
-        return json_encode([
-            'id' => $this->id,
-            'name' => $this->name,
-            'problems' => $this->problems,
-            'startTime' => $this->startTime,
-            'endTime' => $this->endTime,
-            'duration' => $this->duration,
-        ]);
     }
 }
+
+function getContestsFromDatabase() {
+    try {
+        $pdo = new PDO("mysql:host=your_host;dbname=your_database", "your_username", "your_password");
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $sql = "SELECT * FROM contests";
+        $stmt = $pdo->query($sql);
+        $contestData = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        $contests = [];
+        foreach ($contestData as $data) {
+            // Create contest objects and populate them
+            $contest = new Contest(
+                $data['id'],
+                $data['name'],
+                $data['duration'],
+                $data['start_time'],
+                $data['end_time']
+            );
+            $contests[] = $contest;
+        }
+
+        return $contests;
+    } catch (PDOException $e) {
+        // Handle database error
+        echo "Failed to retrieve contests: " . $e->getMessage();
+        return [];
+    }
+}
+
+
+$contests = getContestsFromDatabase();
+
+
 ?>

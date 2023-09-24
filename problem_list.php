@@ -3,8 +3,6 @@
 
 <html lang="en">
   <?php
-// Include your database connection code here
-// Example: include 'db_connection.php';
 
 try {
     $pdo = new PDO("mysql:host=localhost;dbname=xjudge","root", "");

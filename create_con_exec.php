@@ -1,6 +1,5 @@
 <?php
-// Include your database connection code here
-// Example: include 'db_connection.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get and sanitize form data

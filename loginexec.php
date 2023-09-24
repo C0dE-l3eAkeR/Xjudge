@@ -1,6 +1,5 @@
 <?php
-// Include your database connection code here
-// Example: include 'db_connection.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
@@ -30,11 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: index.php"); // Redirect to the dashboard or another protected page
             exit();
         } else {
-            // Invalid credentials, display an error message
+       
             echo "Invalid username or password";
         }
     } catch (PDOException $e) {
-        // Handle database error
+     
         echo "Login failed: " . $e->getMessage();
     }
 }

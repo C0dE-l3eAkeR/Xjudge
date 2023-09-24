@@ -25,7 +25,7 @@ class Problem
 
     }
 
-    // Add getters and setters for the private properties if needed
+
 
     public function getId()
     {
@@ -67,10 +67,6 @@ class Problem
         $this->id = $id;
     }
 
-
-    // You can add more methods here as needed
-
-    // To convert the Problem object to JSON for API responses
     public function toJSON()
     {
         return json_encode([
