@@ -1,0 +1,33 @@
+.toolbar {
+  align-items: center;
+  background: var(--background-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--elem-radius);
+  box-shadow: var(--shadow-01);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--type-smaller-font-size);
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.toolbar-first-row,
+.toolbar .edit-actions {
+  display: flex;
+  gap: 1rem;
+}
+.toolbar .button {
+  color: var(--text-color);
+  white-space: nowrap;
+}
+.toolbar .button:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 769px) {
+  .toolbar {
+    margin: 0 0 2rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

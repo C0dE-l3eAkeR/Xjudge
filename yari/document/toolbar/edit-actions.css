@@ -1,0 +1,16 @@
+.edit-actions {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.edit-actions li .button {
+  max-width: unset;
+}
+.edit-actions a {
+  color: var(--text-link);
+}
+.edit-actions p.editor-opening-error {
+  font-weight: var(--font-body-strong-weight);
+}
+
+/*# sourceMappingURL=edit-actions.css.map */

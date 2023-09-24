@@ -1,0 +1,84 @@
+.plus-header-mandala {
+  --plus-header: var(--collections-header);
+  --plus-mandala: var(--collections-mandala);
+  --plus-icon: var(--collections-icon);
+  --plus-link: var(--collections-link);
+  background: var(--plus-header);
+  overflow: hidden;
+  padding: 1.25rem 0;
+}
+.plus-header-mandala .container {
+  position: relative;
+}
+.plus-header-mandala .container > * {
+  position: relative;
+}
+.plus-header-mandala .container .mandala-icon-wrapper {
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  top: -0.2rem;
+}
+@media screen and (min-width: 992px) {
+  .plus-header-mandala .container .mandala-icon-wrapper {
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+.plus-header-mandala .container .mandala-icon-wrapper .mandala-container {
+  --mandala-primary: var(--plus-mandala);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -49.4%);
+}
+.plus-header-mandala .container .mandala-icon-wrapper .icon {
+  background: var(--plus-icon);
+  height: 2rem;
+  width: 2rem;
+}
+.plus-header-mandala .container h1 {
+  font-size: 2rem;
+  margin: 0;
+  position: static;
+}
+.plus-header-mandala .container h1 span {
+  position: relative;
+}
+.plus-header-mandala .container p {
+  margin: 1rem 0;
+}
+.plus-header-mandala .container p:last-child {
+  margin-bottom: 0;
+}
+.plus-header-mandala .container h1 span,
+.plus-header-mandala .container p {
+  text-shadow: 2px 2px 3px var(--plus-header), 2px -2px 3px var(--plus-header), -2px -2px 3px var(--plus-header), -2px 2px 3px var(--plus-header);
+}
+.plus-header-mandala .container a {
+  color: var(--plus-link);
+  text-decoration: underline;
+}
+.plus-header-mandala .container .button-wrap {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 769px) {
+  .ai-help .container,
+  .collections .container,
+  .updates .container {
+    max-width: 43rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ai-help .container,
+  .collections .container,
+  .updates .container {
+    max-width: 52rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

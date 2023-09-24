@@ -1,0 +1,24 @@
+.offline-status-bar {
+  background-color: var(--accent-primary-engage);
+  color: var(--text-primary);
+  display: none;
+}
+.offline-status-bar.is-offline, .offline-status-bar.is-online {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+.offline-status-bar.is-online {
+  animation: fade-out 3s ease-out 0.5s;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,20 @@
+@use "../../vars" as *;
+
+.logo {
+  align-items: center;
+  display: flex;
+
+  svg {
+    height: 1.5rem;
+    margin-top: 0.3rem;
+  }
+
+  .logo-m,
+  .logo-_ {
+    fill: var(--text-link);
+  }
+
+  .logo-text {
+    fill: var(--text-primary);
+  }
+}

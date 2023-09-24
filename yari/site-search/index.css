@@ -1,0 +1,26 @@
+.query-string {
+  font-style: italic;
+}
+
+.site-search {
+  display: block;
+}
+@media screen and (max-width: 769px) {
+  .site-search article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.site-search article .place {
+  float: right;
+  padding: 1rem;
+}
+@media screen and (max-width: 769px) {
+  .site-search article .place {
+    align-self: center;
+    float: none;
+    order: 4;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

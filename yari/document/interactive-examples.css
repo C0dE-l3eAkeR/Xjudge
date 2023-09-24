@@ -1,0 +1,57 @@
+.interactive {
+  background-color: var(--background-secondary);
+  border: none;
+  border-radius: var(--elem-radius);
+  color: var(--text-primary);
+  height: 675px;
+  margin: 1rem 0;
+  padding: 0;
+  width: 100%;
+}
+.interactive.is-js-height, .interactive.is-taller-height, .interactive.is-shorter-height {
+  border: 0 none;
+}
+.interactive.is-js-height {
+  height: 513px;
+}
+.interactive.is-shorter-height {
+  height: 433px;
+}
+.interactive.is-taller-height {
+  height: 725px;
+}
+.interactive.is-tabbed-shorter-height {
+  height: 487px;
+}
+.interactive.is-tabbed-standard-height {
+  height: 548px;
+}
+.interactive.is-tabbed-taller-height {
+  height: 774px;
+}
+
+@media screen and (min-width: 688px) and (max-width: 768px), screen and (min-width: 1008px) {
+  .interactive {
+    height: 375px;
+  }
+  .interactive.is-js-height {
+    height: 444px;
+  }
+  .interactive.is-shorter-height {
+    height: 364px;
+  }
+  .interactive.is-taller-height {
+    height: 654px;
+  }
+  .interactive.is-tabbed-shorter-height {
+    height: 351px;
+  }
+  .interactive.is-tabbed-standard-height {
+    height: 421px;
+  }
+  .interactive.is-tabbed-taller-height {
+    height: 631px;
+  }
+}
+
+/*# sourceMappingURL=interactive-examples.css.map */

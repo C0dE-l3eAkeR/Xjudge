@@ -1,0 +1,55 @@
+.card {
+  background-color: #fff;
+  border-radius: var(--elem-radius);
+  box-shadow: var(--shadow-01);
+  margin: 0 auto 1rem;
+  max-width: 95%;
+  padding: 0.5rem;
+}
+@media screen and (max-width: 426px) {
+  .card {
+    max-width: 340px;
+  }
+}
+.card.featured {
+  border-top: 18px solid pink;
+}
+.card .card-type-heading {
+  color: pink;
+  margin-bottom: 1rem;
+}
+.card h2 {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.5rem 0;
+}
+@media screen and (min-width: 769px) {
+  .card h2 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
+.card h3 {
+  font-size: 1rem;
+  font-weight: var(--font-body-strong-weight);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 769px) {
+  .card h3 {
+    font-size: 1rem;
+  }
+}
+.card .author {
+  border-bottom: var(--border-primary);
+  margin: 0.5rem 0;
+  padding-bottom: 1rem;
+}
+.card ul,
+.card li {
+  font-size: 0.8125rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

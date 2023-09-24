@@ -1,0 +1,25 @@
+@media screen and (max-width: 425px) {
+  .bc-table thead {
+    display: none;
+  }
+  .bc-table td.bc-support {
+    border-left-width: 0;
+    display: block;
+  }
+  .bc-table .bc-feature,
+  .bc-table .bc-support > button,
+  .bc-table .bc-history > td {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .bc-table .bc-history-desktop {
+    display: none;
+  }
+  .table-container {
+    overflow-x: auto;
+  }
+}
+
+/*# sourceMappingURL=index-mobile.css.map */

@@ -1,0 +1,56 @@
+.breadcrumbs-container {
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+}
+.breadcrumbs-container ol {
+  line-height: 1.2;
+}
+.breadcrumbs-container li {
+  display: none;
+  hyphens: auto;
+}
+.breadcrumbs-container li:first-child, .breadcrumbs-container li:last-child {
+  display: inline-flex;
+}
+.breadcrumbs-container li .breadcrumb::after {
+  background-color: var(--icon-secondary);
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  height: 12px;
+  margin-right: 0.5rem;
+  mask-image: url("../../../assets/icons/chevron.svg");
+  mask-size: 12px;
+  transform: rotate(-90deg);
+  width: 12px;
+}
+.breadcrumbs-container li a {
+  align-items: center;
+  display: flex;
+}
+.breadcrumbs-container li a:link, .breadcrumbs-container li a:visited {
+  color: var(--text-secondary);
+}
+.breadcrumbs-container li a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs-container li a:focus-visible {
+  outline: 0;
+}
+.breadcrumbs-container li a:focus-visible [property=name] {
+  outline-color: var(--accent-primary);
+  outline-offset: 1px;
+  outline-style: auto;
+}
+.breadcrumbs-container li [property=name] {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .breadcrumbs-container li {
+    display: inline-flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

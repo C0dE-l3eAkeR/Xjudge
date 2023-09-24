@@ -1,0 +1,14 @@
+.section-newsletter {
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 2rem;
+}
+.section-newsletter input[type=email],
+.section-newsletter button {
+  width: 100%;
+}
+.section-newsletter form {
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=index.css.map */

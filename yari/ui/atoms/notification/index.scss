@@ -1,0 +1,14 @@
+@use "../../vars" as *;
+
+$mdn-color-violet-90: violet;
+
+.notification-container {
+  background-color: $mdn-color-violet-90;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}

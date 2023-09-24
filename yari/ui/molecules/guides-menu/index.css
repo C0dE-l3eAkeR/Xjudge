@@ -1,0 +1,17 @@
+.guides .submenu .submenu-item-heading {
+  font-size: var(--type-smaller-font-size);
+  font-weight: initial;
+}
+.guides .desktop-only {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .guides .desktop-only {
+    display: inherit;
+  }
+  .guides .mobile-only {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

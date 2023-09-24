@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Standings &mdash; MetaJudge</title>
+	<meta name="description" content="">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="css/inter-fonts.css">
+	<link rel="stylesheet" href="yari/app.css">
+	<link rel="stylesheet" href="yari/ui/organisms/article-actions-container/index.css">
+	<link rel="stylesheet" href="yari/ui/organisms/top-navigation/index.css">
+	<link rel="stylesheet" href="yari/ui/organisms/top-navigation-main/index.css">
+	<link rel="stylesheet" href="yari/ui/molecules/breadcrumbs/index.css">
+	<link rel="stylesheet" href="yari/document/index.css">
+
+	<meta name="theme-color" content="#fafafa">
+
+	<style>
+		body {
+			font-family: Inter, sans-serif;
+		}
+
+		#standings {
+/*			width: 61.803398875%;*/
+			width: 90%;
+			margin: auto;
+		}
+		#standings th, #standings td {
+			text-align: center;
+		}
+
+		.problem {
+			font-family: "STIX Two Text", "XITS", "Noto Serif", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+		}
+
+		.problem h3, .problem .resource-limits {
+			font-family: sans-serif;
+		}
+
+		math {
+			/* color: red; */
+			font-family: "STIX Two Math", "XITS Math", CMSY10, CMEX10, Symbol, Times, math;
+			font-style: normal;
+		}
+
+		#source-code {
+			font-family: "Courier New", Courier, monospace;
+			width: 100%;
+		}
+
+		.contest-name {
+			text-align: center;
+			margin-bottom: 0;
+			margin-top: 3rem;
+		}
+		#clock {
+			text-align: center;
+			font-size: 2rem;
+		}
+
+		.contest-nav-container {
+			border-top: 1px solid var(--border-primary);
+			margin-bottom: 1rem;
+		}
+		.contest-nav {
+			width: 100%;
+			height: fit-content;
+		}
+		.contest-nav>ul {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: space-evenly;
+		}
+		.contest-nav li {
+			padding: 1rem;
+		}
+		.contest-nav li.active-page {
+			background-color: var(--button-primary-active);
+		}
+		.contest-nav li.active-page a {
+			color: var(--text-invert);
+		}
+	</style>
+
+	<script type="text/javascript">
+		const pad = (t) => {
+			const s = String(t);
+			return s.length < 2 ? "0" + s : s;
+		};
+
+		let hours = 3;
+		let minutes = 0;
+		let seconds = 0;
+
+		setInterval(function () {
+			--seconds;
+			if (seconds < 0) {
+				seconds = 59;
+				--minutes;
+			}
+			if (minutes < 0) {
+				minutes = 59;
+				--hours;
+			}
+			document.getElementById("clock").innerHTML = hours < 0
+				? "Contest Finished"
+				: `<time datetime="PT${hours}H${minutes}M${seconds}S">${hours}:${pad(minutes)}:${pad(seconds)}</time>`;
+		}, 1000)
+	</script>
+</head>
+
+<body class="page-wrapper category-learn document-page">
+
+	<header class="main-document-header-container">
+		<div class="top-navigation">
+			<div class="container">
+				<div class="top-navigation-wrap"><a href="index.html">Xjudge</a></div>
+				<div class="top-navigation-main">
+					<nav class="main-nav" aria-label="Main menu">
+						<ul class="main-menu" style="display: flex; flex-direction: row;">
+							<li class="top-level-entry-container"><a href="contests.html" class="top-level-entry">Contests</a></li>
+							<li class="top-level-entry-container"><a href="profile.html" class="top-level-entry">Profile</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<header class="main-document-header-container">
+			<h1 class="contest-name">NSU ICPC Team Forming Contest 5</h1>
+			<p id="clock"><time datetime="PT3H0M0S">03:00:00</time></p>
+			<div class="article-actions-container contest-nav-container">
+				<nav class="container contest-nav">
+					<ul class="breadcrumbs-container">
+						<li><a class="bread-crumb" href="overview.html">Overview</a></li>
+						<li class="active-page"><a class="bread-crumb" href="standings.html">Standings</a></li>
+						<!-- <li><a class="bread-crumb" href="status.html">Status</a></li> -->
+						<li><a class="bread-crumb" href="problems.html">Problems</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<table id="standings">
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Name</th>
+				<th scope="col">Score</th>
+				<th scope="col">A</th>
+				<th scope="col">B</th>
+				<th scope="col">C</th>
+				<th scope="col">D</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<th scope="row">username1</th>
+				<td>123</td>
+				<td class="accepted">
+					<time datetime="11:48">11:48</time>
+				</td>
+				<td class="first-accepted">
+					<time datetime="11:48">11:48</time>
+				</td>
+				<td class="rejected">
+					<time datetime="11:48"><span class="submissions">−3</span></time>
+				</td>
+				<td class="first-accepted">
+					<time datetime="11:48">11:48</time>
+					<span class="submissions">+1</span></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<th scope="row">username2</th>
+				<td>123</td>
+				<td class="first-accepted">
+					<time datetime="11:48">11:48</time>
+					<span class="submissions">+1</span></td>
+				<td class="accepted">
+					<time datetime="11:48">11:48</time>
+				</td>
+				<td class="accepted">
+					<time datetime="11:48">11:48</time>
+				</td>
+				<td class="rejected"><span class="submissions">−1</span></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<th scope="row">username3</th>
+				<td>123</td>
+				<td class="accepted">
+					<time datetime="11:48">11:48</time>
+					<span class="submissions">+2</span></td>
+				<td class="accepted">
+					<time datetime="11:48">11:48</time>
+					<span class="submissions">+2</span></td>
+				<td class="first-accepted">
+					<time datetime="11:48">11:48</time>
+					<span class="submissions">+1</span></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<th scope="row">username4</th>
+				<td>123</td>
+				<td class="accepted">
+					<time datetime="11:48">11:48</time>
+					<span class="submissions">+2</span></td>
+				<td class="rejected"><span class="submissions">−2</span></td>
+				<td class="rejected"><span class="submissions">−1</span></td>
+				<td></td>
+			</tr>
+		</table>
+	</main>
+
+	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
