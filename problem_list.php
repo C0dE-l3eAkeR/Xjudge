@@ -24,20 +24,20 @@ try {
     <title>Xjudge</title>
    <link rel="stylesheet" href="styles.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-   
 
-  
+
+
   </head>
-  
+
   <body>
     <div class="container-fluid">
        <header>
          <div class="row mt-3">
             <div class="col-5">
               <ul class="nav nav-underline nav-fill">
-                <a class="nav-link " aria-current="page" href="index.html">Xjudge</a>
-                <li class="nav-item"><a class="nav-link" href="contests.html">Contest</a></li>
-                <li class="nav-item dropdown">
+                <a class="nav-link " aria-current="page" href="index.php">Xjudge</a>
+                <li class="nav-item"><a class="nav-link" href="contests.php">Contest</a></li>
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -46,14 +46,14 @@ try {
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Separated link</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                 <li class="nav-item"><a class="nav-link" href="#">Group</a></li>
-                <li class="nav-item"><a class="nav-link active" href="Problem_List.html">Problems</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Problem_List.php">Problems</a></li>
               </ul>
             </div>
             <div class="row">
                 <div class="col-lg-12 bg-dark border rounded d-flex flex-row-reverse m-1">
-               
+
                   <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark p-4">
                       <h5 class="text-white h4">Collapsed content</h5>
@@ -84,7 +84,7 @@ try {
                   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
 
                     <nav id="navbar-example2" class="navbar navbar-light bg-light px-3" aria-orientation="vertical">
-                     
+
                       <ul class="nav nav-pills nav-fill">
                         <li class="nav-item">
                           <a class="nav-link" href="#scrollspyHeading1">First</a>
@@ -98,7 +98,7 @@ try {
                       </ul>
                     </nav>
 
-                    
+
                   </div>
                   <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">Hey hold on</div>
                   <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
@@ -114,12 +114,12 @@ try {
 				<div class="input-group-append">
 				  <button class="btn btn-outline-secondary bg-dark" type="submit">ADD</button>
 				</div>
-			</form></div> 
+			</form></div>
           </div>
           <div class="row">
             <div class="col-2">
                 <div class="container p-3">
-                    
+
                 </div>
             </div>
             <div class="col-10">
@@ -136,19 +136,19 @@ try {
             </div>
               </div>
             <div class="contest_lsit container-fluid mt-2 p-3 border shadow rounded bg-dark text-light text-center">
-             
+
             <table class="table table-hover table-striped text-center">
               <thead>
                 <tr>
                     <th>ID</th>
                     <th>Title</th>
-                   
+
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($problems as $problem) : ?>
-                    <tr><a href="">
-                        <td><?php echo $problem['id']; ?></td>
+                    <tr onclick="window.location.href='http://localhost/php/Xjudge/problem.php?id=<?php echo $problem['id']; ?>';"><a href="">
+                        <td><?php echo $problem['problem_id']; ?></td>
                         <td><?php echo $problem['title']; ?></td>
                 </a>
                     </tr>
@@ -169,7 +169,7 @@ try {
             </a>
             <span class="mb-3 mb-md-0 text-muted ">© 2022 Company, Inc</span>
           </div>
-      
+
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
               <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
@@ -193,5 +193,5 @@ s
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
-  
+
 </html>

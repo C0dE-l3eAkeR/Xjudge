@@ -19,10 +19,10 @@ $outputStatement = $html->find(".problem-statement",0)->find(".output-specificat
 $smpltst = $html->find(".problem-statement",0)->find(".sample-tests",0);
 
  foreach($smpltst->find(".input") as $inp){
-     array_push($sampleInputList, $inp);
+     array_push($sampleInputList, $inp->outertext);
  }
 foreach($smpltst->find(".output") as $out){
-     array_push($sampleOutputList, $out);
+     array_push($sampleOutputList, $out->outertext);
  }
 
 $note = $html->find(".problem-statement",0)->find(".note",0)->outertext;
@@ -30,14 +30,19 @@ $note = $html->find(".problem-statement",0)->find(".note",0)->outertext;
 
 // Insert problem data into the "problems" table
 try {
-    $pdo = new PDO("mysql:host=localhost;dbname=xjudge", "root", "");
+    $pdo = new PDO("mysql:host=localhost;dbname=xjudge","root", "");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    $sql = "INSERT INTO problems (title, time_limit, statement, input_statement, output_statement, sample_input_list, sample_output_list, memory_limit) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    
+    // Encode input and output arrays to JSON
+    $json_input = json_encode($sampleInputList);
+    $json_output = json_encode($sampleOutputList);
+    
+    // Prepare and execute an SQL statement to insert the data
+    $sql = "INSERT INTO problems (problem_id, title, time_limit,memory_limit, statement, input_specification, output_specification, sample_tests_input, sample_tests_output, note) VALUES (?, ?, ?,?, ?, ?, ?, ?, ?, ?)";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([$title, $timeLimit, $statement, $inputStatement, $outputStatement, $sampleInputList, $sampleOutputList, $memoryLimit]);
-
-    // Problem creation successful, you can redirect to a success page
+    $stmt->execute([$ID, $title, $timeLimit, $memoryLimit, $statement, $inputStatement, $outputStatement, $json_input, $json_output, $note]);
+    
+   
     header("Location: problem_list.php");
     exit();
 } catch (PDOException $e) {

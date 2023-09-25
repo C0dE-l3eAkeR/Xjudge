@@ -24,8 +24,8 @@ if (!isset($_SESSION['user_id'])) {
          <div class="row mt-3">
             <div class="col-5">
               <ul class="nav nav-underline nav-fill">
-                <a class="nav-link active" aria-current="page" href="index.html">Xjudge</a>
-                <li class="nav-item"><a class="nav-link" href="contests.html">Contests</a></li>
+                <a class="nav-link active" aria-current="page" href="index.php">Xjudge</a>
+                <li class="nav-item"><a class="nav-link" href="contests.php">Contests</a></li>
                 <li class="nav-item"><a class="nav-link" href="problem_list.php">Problems</a></li>
               </ul>
             </div>
@@ -61,7 +61,7 @@ if (!isset($_SESSION['user_id'])) {
           <div class="col-2">
             <div class="d-flex align-items-start">
                 <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><a href="profile.html">Profile</a></button>
+                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="window.location.href='http://localhost/php/Xjudge/profile.php';">Profile</a></button>
                   <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><a href="profile.html">Settings</a></button>
                   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><a href="profile.html">Status</a></button>
                   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><a href="profile.html">Messages</a></button>

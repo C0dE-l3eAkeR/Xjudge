@@ -1,0 +1,86 @@
+<?php
+class Problem
+{
+    private $id;
+    private $title;
+    private $timeLimit;
+    private $memoryLimit;
+    private $statement;
+    private $inputStatement;
+    private $outputStatement;
+    private $sampleInputList;
+    private $sampleOutputList;
+
+
+    public function __construct($title, $timeLimit, $statement, $inputStatement, $outputStatement, $sampleInputList, $sampleOutputList, $memoryLimit)
+    {
+        $this->title = $title;
+        $this->timeLimit = $timeLimit;
+        $this->memoryLimit = $memoryLimit;
+        $this->statement = $statement;
+        $this->inputStatement = $inputStatement;
+        $this->outputStatement = $outputStatement;
+        $this->sampleInputList = $sampleInputList;
+        $this->sampleOutputList = $sampleOutputList
+
+    }
+
+
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function getTimeLimit()
+    {
+        return $this->timeLimit;
+    }
+
+    public function getStatement()
+    {
+        return $this->statement;
+    }
+
+    public function getInputStatement()
+    {
+        return $this->inputStatement;
+    }
+
+    public function getOutputStatement()
+    {
+        return $this->outputStatement;
+    }
+
+    public function getSampleInputList()
+    {
+        return $this->sampleInputList;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function toJSON()
+    {
+        return json_encode([
+            'id' => $this->id,
+            'title' => $this->title,
+            'timeLimit' => $this->timeLimit,
+            'memoryLimit' => $this->memoryLimit
+            'statement' => $this->statement,
+            'inputStatement' => $this->inputStatement,
+            'outputStatement' => $this->outputStatement,
+            'sampleInputList' => $this->sampleInputList,
+           'sampleOutputList' => $this->sampleOutputList	
+            
+        ]);
+    }
+}
+?>

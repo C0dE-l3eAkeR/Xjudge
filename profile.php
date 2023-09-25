@@ -14,9 +14,9 @@
             <div class="col-5">
               <ul class="nav nav-underline nav-fill">
               
-                <li class="nav-item"><a class="nav-link" href="contests.html">Xjudge</a></li>
-                <li class="nav-item"><a class="nav-link" href="contests.html">Contests</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="profile.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php">Xjudge</a></li>
+                <li class="nav-item"><a class="nav-link" href="contests.php">Contests</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="profile.php">Profile</a></li>
               </ul>
             </div>
 
@@ -66,9 +66,8 @@
                 <div class="nav flex-column nav-tabs me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false"><a href="create_contest.php">Create Contest</a></button>
                   <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">My Status</button>
-                  <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
                   <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Standing</button>
-                  <button class="nav-link active" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="true">Profile</button></div>
+                  <button class="nav-link active" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="true" onclick="window.location.href='/index.php';">Profile</button></div>
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
 

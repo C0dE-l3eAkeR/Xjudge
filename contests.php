@@ -32,9 +32,9 @@ try {
          <div class="row mt-3">
             <div class="col-5">
               <ul class="nav nav-underline nav-fill">
-                <a class="nav-link " aria-current="page" href="index.html">Xjudge</a>
-                <li class="nav-item"><a class="nav-link active" href="#">Contest</a></li>
-                <li class="nav-item dropdown">
+                <a class="nav-link " aria-current="page" href="index.php">Xjudge</a>
+                <li class="nav-item"><a class="nav-link active" href="contests.php">Contests</a></li>
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -43,9 +43,9 @@ try {
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Separated link</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                 <li class="nav-item"><a class="nav-link" href="#">Group</a></li>
-                <li class="nav-item"><a class="nav-link" href="Problem_List.html">Problem</a></li>
+                <li class="nav-item"><a class="nav-link" href="Problem_List.php">Problems</a></li>
               </ul>
             </div>
             <div class="row">
