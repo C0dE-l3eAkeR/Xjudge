@@ -8,6 +8,17 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: login.html");
     exit();
 }
+else {
+    // the above echo is just for testing
+    ?>
+     <script type='text/javascript'>
+        $(document).ready(function(){
+           document.getElementById("logout").style.display = "none";
+      });
+
+     </script>
+    <?php
+}
 ?>
 <html lang="en">
   
@@ -33,7 +44,9 @@ if (!isset($_SESSION['user_id'])) {
 
             </div>
             <div class="col-2 d-flex flex-row-reverse">
-              <a class="nav-link" aria-current="page" href="login.html">s</a>
+             <form action="logout.php" method="post">
+              <button type="submit" id="logout">Log Out</button>
+             </form>
             </div>
           </div>
           <div class="col-1"></div>
